@@ -12,7 +12,7 @@
 		53D9CC5A22C5227200FFAA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D9CC5922C5227200FFAA21 /* Assets.xcassets */; };
 		53D9CC5D22C5227200FFAA21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53D9CC5B22C5227200FFAA21 /* LaunchScreen.storyboard */; };
 		53D9CC6722C5234100FFAA21 /* AppleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CC6622C5234100FFAA21 /* AppleItem.swift */; };
-		53D9CC6922C5234C00FFAA21 /* SearchModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CC6822C5234C00FFAA21 /* SearchModelController.swift */; };
+		53D9CC6922C5234C00FFAA21 /* AppleItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CC6822C5234C00FFAA21 /* AppleItemController.swift */; };
 		53D9CC6E22C5258100FFAA21 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CC6D22C5258100FFAA21 /* ItemTableViewController.swift */; };
 		53D9CC7022C5259300FFAA21 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CC6F22C5259300FFAA21 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
@@ -25,7 +25,7 @@
 		53D9CC5C22C5227200FFAA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53D9CC5E22C5227200FFAA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53D9CC6622C5234100FFAA21 /* AppleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleItem.swift; sourceTree = "<group>"; };
-		53D9CC6822C5234C00FFAA21 /* SearchModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModelController.swift; sourceTree = "<group>"; };
+		53D9CC6822C5234C00FFAA21 /* AppleItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleItemController.swift; sourceTree = "<group>"; };
 		53D9CC6D22C5258100FFAA21 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		53D9CC6F22C5259300FFAA21 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,7 +99,7 @@
 		53D9CC6B22C5235800FFAA21 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
-				53D9CC6822C5234C00FFAA21 /* SearchModelController.swift */,
+				53D9CC6822C5234C00FFAA21 /* AppleItemController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -185,7 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53D9CC5322C5227100FFAA21 /* AppDelegate.swift in Sources */,
-				53D9CC6922C5234C00FFAA21 /* SearchModelController.swift in Sources */,
+				53D9CC6922C5234C00FFAA21 /* AppleItemController.swift in Sources */,
 				53D9CC6E22C5258100FFAA21 /* ItemTableViewController.swift in Sources */,
 				53D9CC6722C5234100FFAA21 /* AppleItem.swift in Sources */,
 				53D9CC7022C5259300FFAA21 /* ItemCell.swift in Sources */,
