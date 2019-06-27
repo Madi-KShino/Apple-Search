@@ -17,10 +17,10 @@ struct ResultsJson: Decodable {
 //SECOND LEVEL
 struct AppleItem: Decodable {
     
-    let songName: String
-    let artistName: String
-    let albumName: String
-    let imageURL: URL
+    let songName: String?
+    let artistName: String?
+    let albumName: String?
+    let imageURL: URL?
     
     enum CodingKeys: String, CodingKey {
         

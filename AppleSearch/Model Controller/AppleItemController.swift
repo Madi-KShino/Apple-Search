@@ -11,7 +11,6 @@ import UIKit
 class AppleItemController {
     
     //PROPERTIES
-    static let sharedInstance = AppleItemController()
     static let baseURL = URL(string: "https://itunes.apple.com")
     
     //RETRIEVE ITEMS
@@ -55,7 +54,7 @@ class AppleItemController {
     //RETRIEVE ITEM IMAGES
     static func fetchImageFor(appleItem: AppleItem, completion: @escaping (UIImage?) -> Void) {
         
-        let imageURL = appleItem.imageURL
+        guard let imageURL = appleItem.imageURL else { return }
         
         URLSession.shared.dataTask(with: imageURL) { (data, _, error) in
             if let error = error {
