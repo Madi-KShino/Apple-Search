@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		53D9CC5322C5227100FFAA21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CC5222C5227100FFAA21 /* AppDelegate.swift */; };
-		53D9CC5522C5227100FFAA21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CC5422C5227100FFAA21 /* ViewController.swift */; };
 		53D9CC5822C5227100FFAA21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53D9CC5622C5227100FFAA21 /* Main.storyboard */; };
 		53D9CC5A22C5227200FFAA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D9CC5922C5227200FFAA21 /* Assets.xcassets */; };
 		53D9CC5D22C5227200FFAA21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53D9CC5B22C5227200FFAA21 /* LaunchScreen.storyboard */; };
+		53D9CC6722C5234100FFAA21 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CC6622C5234100FFAA21 /* SearchModel.swift */; };
+		53D9CC6922C5234C00FFAA21 /* SearchModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CC6822C5234C00FFAA21 /* SearchModelController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53D9CC4F22C5227100FFAA21 /* AppleSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D9CC5222C5227100FFAA21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		53D9CC5422C5227100FFAA21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		53D9CC5722C5227100FFAA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53D9CC5922C5227200FFAA21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53D9CC5C22C5227200FFAA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53D9CC5E22C5227200FFAA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53D9CC6622C5234100FFAA21 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		53D9CC6822C5234C00FFAA21 /* SearchModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModelController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,55 @@
 		53D9CC5122C5227100FFAA21 /* AppleSearch */ = {
 			isa = PBXGroup;
 			children = (
+				53D9CC6522C5232400FFAA21 /* View */,
+				53D9CC6A22C5235400FFAA21 /* Model */,
+				53D9CC6B22C5235800FFAA21 /* Model Controller */,
+				53D9CC6C22C5236200FFAA21 /* View Controllers */,
+				53D9CC6422C5230D00FFAA21 /* Resources */,
+			);
+			path = AppleSearch;
+			sourceTree = "<group>";
+		};
+		53D9CC6422C5230D00FFAA21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				53D9CC5222C5227100FFAA21 /* AppDelegate.swift */,
-				53D9CC5422C5227100FFAA21 /* ViewController.swift */,
-				53D9CC5622C5227100FFAA21 /* Main.storyboard */,
 				53D9CC5922C5227200FFAA21 /* Assets.xcassets */,
 				53D9CC5B22C5227200FFAA21 /* LaunchScreen.storyboard */,
 				53D9CC5E22C5227200FFAA21 /* Info.plist */,
 			);
-			path = AppleSearch;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		53D9CC6522C5232400FFAA21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53D9CC5622C5227100FFAA21 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53D9CC6A22C5235400FFAA21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53D9CC6622C5234100FFAA21 /* SearchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53D9CC6B22C5235800FFAA21 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53D9CC6822C5234C00FFAA21 /* SearchModelController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		53D9CC6C22C5236200FFAA21 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53D9CC5522C5227100FFAA21 /* ViewController.swift in Sources */,
 				53D9CC5322C5227100FFAA21 /* AppDelegate.swift in Sources */,
+				53D9CC6922C5234C00FFAA21 /* SearchModelController.swift in Sources */,
+				53D9CC6722C5234100FFAA21 /* SearchModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AppleSearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AppleSearch/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AppleSearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AppleSearch/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
